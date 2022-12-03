@@ -51,6 +51,7 @@ public final class Fraction implements Serializable {
                 .toString();
     }
 
+
     public double multiplyFractions(Fraction fraction){
         double multiplied = this.doubleValue() * fraction.doubleValue();
 

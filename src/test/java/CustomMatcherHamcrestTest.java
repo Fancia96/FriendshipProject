@@ -13,5 +13,11 @@ public class CustomMatcherHamcrestTest {
         assertThat(fr1.toString(), isProperFractionHamcrest.properFraction());
     }
 
+    @Test
+    public void idDoubleFractionTest(){
+        Fraction fr1 = Fraction.of(1, 2);
+        assertThat(fr1.doubleValue(), isDoubleFractionHamcrest.isDouble());
+    }
+
 
 }
